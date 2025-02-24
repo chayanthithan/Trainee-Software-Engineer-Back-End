@@ -1,0 +1,121 @@
+Error - >
+_____
+Lombok Did not support to latest Version
+
+solutions
+_________
+
+change the lombok version in pom.xml
+1.18.30
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.30</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+Shortcut Keys
+____________
+Shortcut
+
+Action
+
+Double Shift
+
+Search Everywhere
+
+Quickly find any file, action, symbol, tool window, or setting in IntelliJ IDEA, in your project, and in the current Git repository.
+
+CtrlShift
+0A
+
+Find Action
+
+Find a command and execute it, open a tool window, or search for a setting.
+
+AltEnter
+
+Show Context Actions
+
+Quick-fixes for highlighted errors and warnings, intention actions for improving and optimizing your code.
+
+F2
+
+Shift
+F2
+
+Navigate between code issues
+
+Jump to the next or previous highlighted error.
+
+Ctrl
+0E
+
+View recent files
+
+Select a recently opened file from the list.
+
+CtrlShiftEnter
+
+Complete Current Statement
+
+Insert any necessary trailing symbols and place the caret where you can start typing the next statement.
+
+CtrlAlt
+0L
+
+Reformat Code
+
+Reformat the whole file or the selected fragment according to the current code style settings.
+
+CtrlAltShift
+0T
+
+Invoke refactoring
+
+Refactor the element under the caret, for example, safe delete, copy, move, rename, and so on.
+
+Ctrl
+0W
+
+CtrlShift
+0W
+
+Extend or shrink selection
+
+Increase or decrease the scope of selection according to specific code constructs.
+
+Ctrl
+0/
+
+CtrlShift
+0/
+
+Add/remove line or block comment
+
+Comment out a line or block of code.
+
+Ctrl
+0B
+
+Go To Declaration
+
+Navigate to the initial declaration of the instantiated class, called method, or field.
+
+Alt
+F7
+
+Find Usages
+
+Show all places where a code element is used across your project.
+
+Alt
+01
+
+Focus the Project tool window
+
+Esc
+
+Focus the editor
