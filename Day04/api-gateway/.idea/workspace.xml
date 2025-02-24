@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85103b49-a591-4530-a819-7f74447a014e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Example 02/course-service/src/main/java/com/example/course_service/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/course-service/src/main/java/com/example/course_service/dto/CourseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/course-service/src/main/java/com/example/course_service/entity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/course-service/src/main/java/com/example/course_service/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/course-service/src/main/java/com/example/course_service/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/faculty-service/src/main/java/com/example/faculty_service/controller/FacultyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/faculty-service/src/main/java/com/example/faculty_service/entity/Faculty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/faculty-service/src/main/java/com/example/faculty_service/repository/FacultyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/faculty-service/src/main/java/com/example/faculty_service/service/FacultyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/student-service/src/main/java/com/example/student_service/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/student-service/src/main/java/com/example/student_service/dto/StudentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/student-service/src/main/java/com/example/student_service/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/student-service/src/main/java/com/example/student_service/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example 02/student-service/src/main/java/com/example/student_service/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day02/ebos_compliance_management_service" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day02/ebos_compliance_management_service" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2tV7t8mpki2ZuHTQx7QWZunyXYI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "F:/CodeLantic/Trainee-Software-Engineer-Back-End/Day04/Example 02/student-service"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.api_gateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.api_gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ApiGatewayApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85103b49-a591-4530-a819-7f74447a014e" name="Changes" comment="" />
+      <created>1740425600644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740425600644</updated>
+    </task>
+    <servers />
+  </component>
+</project>
