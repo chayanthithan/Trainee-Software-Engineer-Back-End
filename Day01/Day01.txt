@@ -1,0 +1,5 @@
+feignClient
+AllArgsConstructors
+RequiredArgsConstructor
+
+SonarQube plugin
