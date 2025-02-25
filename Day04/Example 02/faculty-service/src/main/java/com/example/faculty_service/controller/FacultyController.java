@@ -20,9 +20,14 @@ public class FacultyController {
         return facultyService.getAllFaculties();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public Faculty getFacultyById(@PathVariable Long id){
         return facultyService.getFacultyById(id);
+    }
+
+    @GetMapping("/name/{name}")
+    public Faculty getFacultyByName(@PathVariable String name){
+        return facultyService.getFacultyByName(name);
     }
 
     @PostMapping()

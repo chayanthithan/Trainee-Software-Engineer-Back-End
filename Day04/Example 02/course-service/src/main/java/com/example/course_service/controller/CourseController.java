@@ -25,8 +25,13 @@ public class CourseController {
         return service.addCourse(courseDto);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public Course getCourseById(@PathVariable Long id){
         return service.getCourseById(id);
+    }
+
+    @GetMapping("/name/{name}")
+    public Course getCourseByName(@PathVariable String name){
+        return service.getCourseByName(name);
     }
 }

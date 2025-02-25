@@ -1,5 +1,6 @@
 package com.example.student_service.controller;
 
+import com.example.student_service.dto.CommonStudentDto;
 import com.example.student_service.dto.StudentDto;
 import com.example.student_service.entity.Student;
 import com.example.student_service.service.StudentService;
@@ -21,8 +22,8 @@ public class StudentController {
     }
 
     @PostMapping()
-    public Student addStudent(@RequestBody StudentDto studentDto){
-        return service.addStudent(studentDto);
+    public Student addStudent(@RequestBody CommonStudentDto commonStudentDto){
+        return service.addStudent(commonStudentDto);
     }
 
     @GetMapping("/{id}")

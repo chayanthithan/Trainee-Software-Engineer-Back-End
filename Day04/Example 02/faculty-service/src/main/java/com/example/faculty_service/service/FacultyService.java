@@ -32,4 +32,7 @@ public class FacultyService {
         return repository.save(faculty);
     }
 
+    public Faculty getFacultyByName(String name) {
+        return repository.findByName(name);
+    }
 }

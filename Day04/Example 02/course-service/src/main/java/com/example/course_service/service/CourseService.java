@@ -30,4 +30,8 @@ public class CourseService {
     public Course getCourseById(Long id) {
         return courseRepository.findById(id).orElseThrow(() -> new RuntimeException("there is no records in given id"));
     }
+
+    public Course getCourseByName(String name) {
+        return courseRepository.findByName(name);
+    }
 }
