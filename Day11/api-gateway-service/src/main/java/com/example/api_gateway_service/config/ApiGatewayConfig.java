@@ -14,7 +14,7 @@ public class ApiGatewayConfig {
                         .uri("http://localhost:8084"))
                 .route("supplier-service", r -> r.path("/supplier/**")
                         .uri("http://localhost:8083"))
-                .route("user-management-service", r -> r.path("/user/**")
+                .route("user-management-service", r -> r.path("/user-service/**")
                         .uri("http://localhost:8082"))
                 .build();
     }
