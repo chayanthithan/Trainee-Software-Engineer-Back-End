@@ -1,0 +1,1 @@
+ALTER TABLE academic_staff MODIFY COLUMN id VARCHAR(100);

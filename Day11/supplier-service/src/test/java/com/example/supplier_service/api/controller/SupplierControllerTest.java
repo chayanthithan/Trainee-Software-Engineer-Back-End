@@ -1,5 +1,6 @@
 package com.example.supplier_service.api.controller;
 
+import com.example.supplier_service.dto.SupplierDto;
 import com.example.supplier_service.entity.Supplier;
 import com.example.supplier_service.service.SupplierService;
 import org.junit.jupiter.api.Test;
@@ -85,6 +86,32 @@ class SupplierControllerTest {
         assertEquals(response.getStatusCode(),HttpStatus.OK);
 
     }
+
+    @Test
+    void testAddSupplierDetails_Success(){
+        SupplierDto supplierDto = SupplierDto.builder()
+                .contactEmail("test")
+                .name("test")
+                .build();
+
+        Supplier supplier = Supplier.builder()
+                .id(1L)
+                .name("test")
+                .contactEmail("test")
+                .build();
+        when(supplierService.saveSupplierDetails(supplierDto)).thenReturn(supplier);
+        Supplier response = supplierController.addSupplierDetails(supplierDto);
+
+        assertEquals("test",response.getName());
+        assertNotNull(response);
+    }
+ @Test
+    void testDeleteSupplier_whenIdExist(){
+        Long id = 1L;
+        when(supplierService.deleteSupplierById(id)).thenReturn("Successfully deleted");
+        String response = supplierController.deleteSupplier(id);
+        assertEquals(response,"Successfully deleted");
+ }
 
 
 }

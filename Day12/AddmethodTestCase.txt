@@ -1,0 +1,17 @@
+@Test
+    void testSaveSupplierDetails_Failure(){
+        SupplierDto supplierDto = SupplierDto.builder()
+                .contactEmail("test")
+                .name("test")
+                .build();
+
+        Supplier supplier = Supplier.builder()
+                .id(1L)
+                .contactEmail("test")
+                .name("test")
+                .build();
+
+        when(supplierConverter.convert(supplierDto)).thenReturn(supplier);
+        when(supplierRepository.save(supplier)).thenThrow(new RuntimeException("Invalid Data"));
+        Exception exception = assertThrows(RuntimeException.class,() -> supplierService.saveSupplierDetails(supplierDto));
+
