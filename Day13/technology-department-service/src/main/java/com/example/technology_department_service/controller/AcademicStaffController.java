@@ -18,7 +18,7 @@ public class AcademicStaffController {
 
     private final AcademicStaffService academicStaffService;
     @GetMapping()
-    public Optional<List<AcademicStaff>> getAllAcademicStaff(){
+    public List<AcademicStaff> getAllAcademicStaff(){
         return academicStaffService.getAcademicStaffList();
     }
 

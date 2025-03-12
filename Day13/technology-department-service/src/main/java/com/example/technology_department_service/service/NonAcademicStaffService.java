@@ -17,8 +17,8 @@ public class NonAcademicStaffService {
 
     private final NonAcademicStaffRepository nonAcademicStaffRepository;
     private final NonAcademicStaffConverter nonAcademicStaffConvert;
-    public Optional<List<NonAcademicStaff>> getAcademicStaffList() {
-        return Optional.of(nonAcademicStaffRepository.findAll());
+    public List<NonAcademicStaff> getAcademicStaffList() {
+        return nonAcademicStaffRepository.findAll();
     }
 
     public Optional<NonAcademicStaff> getAcademicStaffById(String id) {

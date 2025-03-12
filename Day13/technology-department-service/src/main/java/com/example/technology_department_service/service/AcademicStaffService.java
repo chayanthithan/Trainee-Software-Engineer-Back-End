@@ -17,8 +17,8 @@ public class AcademicStaffService {
 
     private final AcademicStaffRepository academicStaffRepository;
     private final AcademicStaffConvert academicStaffConvert;
-    public Optional<List<AcademicStaff>> getAcademicStaffList() {
-        return Optional.of(academicStaffRepository.findAll());
+    public List<AcademicStaff> getAcademicStaffList() {
+        return academicStaffRepository.findAll();
     }
 
     public Optional<AcademicStaff> getAcademicStaffById(String id) {

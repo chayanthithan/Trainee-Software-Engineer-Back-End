@@ -31,6 +31,8 @@ public class Students {
     @Enumerated(EnumType.STRING)
     private Course course;
     private Year accYear;
+    private String nic;
+    private String email;
 
 
 }

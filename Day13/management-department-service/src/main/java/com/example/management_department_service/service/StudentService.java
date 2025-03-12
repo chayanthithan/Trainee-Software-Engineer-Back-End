@@ -2,11 +2,14 @@ package com.example.management_department_service.service;
 
 import com.example.management_department_service.api.dto.StudentDto;
 import com.example.management_department_service.api.dto.StudentResponseDto;
+import com.example.management_department_service.api.dto.StudentResponseDtoNew;
 import com.example.management_department_service.converter.StudentConverter;
 import com.example.management_department_service.entity.Students;
 import com.example.management_department_service.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @RequiredArgsConstructor
 @Service
@@ -20,5 +23,9 @@ public class StudentService {
                 .status("Successfully saved")
                 .id(students.getRegNum())
                 .build();
+    }
+
+    public List<StudentResponseDtoNew> getStudents() {
+        return studentRepository.getAllStudentDetails();
     }
 }

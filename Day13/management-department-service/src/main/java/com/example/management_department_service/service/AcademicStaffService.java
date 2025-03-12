@@ -1,5 +1,6 @@
 package com.example.management_department_service.service;
 
+import com.example.management_department_service.api.dto.AcademicDtoProjection;
 import com.example.management_department_service.api.dto.AcademicStaffDto;
 import com.example.management_department_service.api.dto.AcademicStaffResponseDto;
 import com.example.management_department_service.converter.AcademicStaffConvert;
@@ -17,8 +18,8 @@ public class AcademicStaffService {
 
     private final AcademicStaffRepository academicStaffRepository;
     private final AcademicStaffConvert academicStaffConvert;
-    public Optional<List<AcademicStaff>> getAcademicStaffList() {
-        return Optional.of(academicStaffRepository.findAll());
+    public List<AcademicStaff> getAcademicStaffList() {
+        return academicStaffRepository.findAll();
     }
 
     public Optional<AcademicStaff> getAcademicStaffById(String id) {
@@ -31,5 +32,9 @@ public class AcademicStaffService {
                 .status("Successfully created")
                 .id(academicStaff.getId())
                 .build();
+    }
+
+    public Optional<AcademicDtoProjection> findAcademicStaffById(String id) {
+        return academicStaffRepository.findAcademicStaffById(id);
     }
 }

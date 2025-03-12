@@ -18,7 +18,7 @@ public class NonAcademicStaffController {
 
     private final NonAcademicStaffService nonAcademicStaffService;
     @GetMapping()
-    public Optional<List<NonAcademicStaff>> getAllAcademicStaff(){
+    public List<NonAcademicStaff> getAllAcademicStaff(){
         return nonAcademicStaffService.getAcademicStaffList();
     }
 
@@ -28,7 +28,7 @@ public class NonAcademicStaffController {
     }
 
     @PostMapping()
-    public NonAcademicStaffResponseDto addAcademicStaff(@Valid @RequestBody NonAcademicStaffDto nonAcademicStaffDto){
+    public NonAcademicStaffResponseDto addNonAcademicStaff(@Valid @RequestBody NonAcademicStaffDto nonAcademicStaffDto){
         return nonAcademicStaffService.saveAcademicStaffDetails(nonAcademicStaffDto);
     }
 }
