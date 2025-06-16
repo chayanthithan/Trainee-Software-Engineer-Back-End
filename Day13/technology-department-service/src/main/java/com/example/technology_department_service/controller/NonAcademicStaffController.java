@@ -4,7 +4,6 @@ import com.example.technology_department_service.dto.NonAcademicStaffDto;
 import com.example.technology_department_service.dto.NonAcademicStaffResponseDto;
 import com.example.technology_department_service.entity.NonAcademicStaff;
 import com.example.technology_department_service.service.NonAcademicStaffService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,17 +17,17 @@ public class NonAcademicStaffController {
 
     private final NonAcademicStaffService nonAcademicStaffService;
     @GetMapping()
-    public List<NonAcademicStaff> getAllAcademicStaff(){
+    public List<NonAcademicStaff> getAllNonAcademicStaff(){
         return nonAcademicStaffService.getAcademicStaffList();
     }
 
     @GetMapping("/{id}")
-    public Optional<NonAcademicStaff> getAcademicStaffById(@PathVariable String id){
+    public Optional<NonAcademicStaff> getNonAcademicStaffById(@PathVariable String id){
         return nonAcademicStaffService.getAcademicStaffById(id);
     }
 
     @PostMapping()
-    public NonAcademicStaffResponseDto addNonAcademicStaff(@Valid @RequestBody NonAcademicStaffDto nonAcademicStaffDto){
+    public NonAcademicStaffResponseDto addNonAcademicStaff(@RequestBody NonAcademicStaffDto nonAcademicStaffDto){
         return nonAcademicStaffService.saveAcademicStaffDetails(nonAcademicStaffDto);
     }
 }

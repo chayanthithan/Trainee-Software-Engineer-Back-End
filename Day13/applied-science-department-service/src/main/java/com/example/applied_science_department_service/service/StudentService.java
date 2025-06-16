@@ -21,4 +21,8 @@ public class StudentService {
                 .id(students.getRegNum())
                 .build();
     }
+
+    public int getStudentCount() {
+        return studentRepository.findAllStudentCount();
+    }
 }

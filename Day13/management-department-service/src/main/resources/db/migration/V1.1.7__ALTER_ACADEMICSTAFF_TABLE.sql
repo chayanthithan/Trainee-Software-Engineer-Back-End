@@ -1,0 +1,1 @@
+ALTER TABLE academic_staff ADD academic_staff_id VARCHAR(100)

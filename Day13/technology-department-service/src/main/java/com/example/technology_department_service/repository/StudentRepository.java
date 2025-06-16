@@ -12,4 +12,6 @@ public interface StudentRepository extends JpaRepository<Students,Long> {
     @Query("SELECT s.regNum FROM Students s WHERE s.regNum LIKE CONCAT('%/', :code, '/%') ORDER BY s.regNum DESC")
     List<String> findByCourseCode(@Param("code") String code, Pageable pageable);
 
+    @Query("SELECT COUNT(s.regNum) FROM Students s ")
+    int findAllStudentCount();
 }

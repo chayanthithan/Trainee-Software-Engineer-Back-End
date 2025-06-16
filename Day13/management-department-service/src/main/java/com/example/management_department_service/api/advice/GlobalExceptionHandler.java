@@ -33,7 +33,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 import java.util.*;
 
-@ControllerAdvice
+@ControllerAdvice  //it is used to handle exception which is comes from controller
 @Slf4j
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     private final ObjectMapper objectMapper = new ObjectMapper();

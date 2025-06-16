@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface StudentRepository extends JpaRepository<Students,Long> {
+public interface StudentRepository extends JpaRepository<Students,String> {
     @Query("SELECT s.regNum FROM Students s WHERE s.regNum LIKE CONCAT('%/', :code, '/%') ORDER BY s.regNum DESC")
     List<String> findByCourseCode(@Param("code") String code, Pageable pageable);
 
@@ -19,6 +19,8 @@ public interface StudentRepository extends JpaRepository<Students,Long> {
             "from Students s ")
     List<StudentResponseDtoNew> getAllStudentDetails();
 
+    @Query("SELECT COUNT(s.regNum) FROM Students s ")
+    int findAllStudentCount();
 }
 //
 //    @Query("SELECT new com.codelantic.marketplace.product.service.dto.ProductResponseDto(" +

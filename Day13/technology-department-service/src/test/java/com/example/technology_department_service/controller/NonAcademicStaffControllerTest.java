@@ -44,7 +44,7 @@ class NonAcademicStaffControllerTest {
                 .job(Job.ASSISTANT_LECTURER)
                 .build();
         when(nonAcademicStaffService.getAcademicStaffList()).thenReturn(List.of(nonAcademicStaff));
-        List<NonAcademicStaff> response = nonAcademicStaffController.getAllAcademicStaff();
+        List<NonAcademicStaff> response = nonAcademicStaffController.getAllNonAcademicStaff();
 
         assertEquals(response.get(0).getId(),"test-06");
 
@@ -63,7 +63,7 @@ class NonAcademicStaffControllerTest {
                 .job(Job.ASSISTANT_LECTURER)
                 .build();
         when(nonAcademicStaffService.getAcademicStaffList()).thenReturn(new ArrayList<>());
-        List<NonAcademicStaff> response = nonAcademicStaffController.getAllAcademicStaff();
+        List<NonAcademicStaff> response = nonAcademicStaffController.getAllNonAcademicStaff();
 
         assertTrue(response.isEmpty());
 
@@ -84,7 +84,7 @@ class NonAcademicStaffControllerTest {
                 .build();
 
         when(nonAcademicStaffService.getAcademicStaffById(id)).thenReturn(Optional.of(nonAcademicStaff));
-        Optional<NonAcademicStaff> response = nonAcademicStaffController.getAcademicStaffById(id);
+        Optional<NonAcademicStaff> response = nonAcademicStaffController.getNonAcademicStaffById(id);
 
         assertNotNull(response);
         assertEquals(response.get().getId(),"test-06");
@@ -104,7 +104,7 @@ class NonAcademicStaffControllerTest {
                 .build();
 
         when(nonAcademicStaffService.getAcademicStaffById(id)).thenReturn(Optional.empty());
-        Optional<NonAcademicStaff> response = nonAcademicStaffController.getAcademicStaffById(id);
+        Optional<NonAcademicStaff> response = nonAcademicStaffController.getNonAcademicStaffById(id);
 
         assertTrue(response.isEmpty(),"There is not record match with the id");
     }

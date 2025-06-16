@@ -18,17 +18,17 @@ public class NonAcademicStaffController {
 
     private final NonAcademicStaffService nonAcademicStaffService;
     @GetMapping()
-    public Optional<List<NonAcademicStaff>> getAllAcademicStaff(){
+    public Optional<List<NonAcademicStaff>> getAllNonAcademicStaff(){
         return nonAcademicStaffService.getAcademicStaffList();
     }
 
     @GetMapping("/{id}")
-    public Optional<NonAcademicStaff> getAcademicStaffById(@PathVariable String id){
+    public Optional<NonAcademicStaff> getNonAcademicStaffById(@PathVariable String id){
         return nonAcademicStaffService.getAcademicStaffById(id);
     }
 
     @PostMapping()
-    public NonAcademicStaffResponseDto addAcademicStaff(@Valid @RequestBody NonAcademicStaffDto nonAcademicStaffDto){
+    public NonAcademicStaffResponseDto addNonAcademicStaff(@Valid @RequestBody NonAcademicStaffDto nonAcademicStaffDto){
         return nonAcademicStaffService.saveAcademicStaffDetails(nonAcademicStaffDto);
     }
 }

@@ -37,4 +37,8 @@ public class AcademicStaffController {
         return academicStaffService.findAcademicStaffById(id);
     }
 
+    @DeleteMapping()
+    public String deleteAcademicStaff(@RequestParam String id){
+        return academicStaffService.deleteAcademicStaffById(id);
+    }
 }
